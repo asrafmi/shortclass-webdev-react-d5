@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script>
+    const update = () => {
+      const element = `<h1>Jam Saat ini</h1>
+            <form>
+                <input type="text">
+                </form>
+                <span>Waktu Sekarang: ${new Date().toLocaleString()}</span>`;
+      document.getElementById('app').innerHTML = element;
+    };
+
+    setInterval(update, 1000);
+  </script>
+</html>
